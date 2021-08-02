@@ -97,6 +97,7 @@ aside {
     #portfolio {
         flex-flow: row wrap;
         justify-content: space-around;
+        
     }
     
     .desk-foot {
