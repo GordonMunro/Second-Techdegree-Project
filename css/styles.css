@@ -97,7 +97,7 @@ aside {
     #portfolio {
         flex-flow: row wrap;
         justify-content: space-around;
-        
+
     }
     
     .desk-foot {
@@ -115,7 +115,7 @@ aside {
     }
     .row {
         max-width: 48%;
-        margin: auto;
+        margin: 0 auto;
     }
     aside {
         max-height: 30%;
@@ -129,7 +129,7 @@ aside {
     }    
     .row {
         max-width: 30%;
-        margin: auto;
+        margin: 0 auto;
     }
     .header-nav {
         display: flex;
