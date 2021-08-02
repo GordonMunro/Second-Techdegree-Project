@@ -12,57 +12,74 @@
     <title>Responsive Website</title>
 </head>
 <body>
+  
   <header id="home">
     <h1>Gordon Munro</h1>
-    <nav class="main-nav">
-      <ul>
+    <nav>
+      <ul class="main-nav">
         <li><a href="#home">HOME</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li><a href="#skills">SKILLS</a></li>
       </ul>
     </nav>
-    <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web developement at Treehouse and I am excited to put all my skills to use!</p><img src="images/responsive-layout-profile.png" alt="Profile Photo">
+    <div id="prof-img">
+      <img src="images/responsive-layout-profile.png" class="port header-image" alt="Profile Photo">
+      <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web developement at Treehouse and I am excited to put all my skills to use!</p>
+    </div>
   </header>
-
+  <div class="container">
   <main>
-    <section>
-      <h3 id="portfolio">PORTFOLIO</h2>
-      <div>
-        <img src="images/portfolio-1.png" alt="a picture of a marketing webpage">
-        <h2>Marketing Page</h2>
-        <p>This project shows the front page of a marketing website for a specific business I'm interested in.</p>
-      </div>
-      <div>
-        <img src="images/portfolio-2.png" alt="a picture of a search engine webpage">
-        <h2>Search Page</h2>
-        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-      </div>
-      <div>
-        <img src="images/portfolio-3.png" alt="a picture of a travel app">
-        <h2>Travel App</h2>
-        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-      </div>
-      <div>
-        <img src="images/portfolio-4.png" alt="a picture of a mapping app">
+    <h3>PORTFOLIO</h2>
+    <section id="portfolio">
+      <!-- <div class="row"> -->
+        
+        <div class="row">
+          <img src="images/portfolio-1.png" class="port" alt="a picture of a marketing webpage">
+          <h2>Marketing Page</h2>
+          <p>This project shows the front page of a marketing website for a specific business I'm interested in.</p>
+        </div>
+        <div class="row">
+          <img src="images/portfolio-2.png" class="port" alt="a picture of a search engine webpage">
+          <h2>Search Page</h2>
+          <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+        </div>
+      
+        <div class="row">
+          <img src="images/portfolio-3.png" class="port" alt="a picture of a travel app">
+          <h2>Travel App</h2>
+          <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+        </div>
+      <!-- </div> -->
+      <!-- <div class="row"> -->
+      <div class="row">
+        <img src="images/portfolio-4.png" class="port" alt="a picture of a mapping app">
         <h2>Map of Favorite Spots</h2>
         <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
       </div>
-      <div>
-        <img src="images/portfolio-5.png" alt="a picture of a photo gallery">
+      <div class="row">
+        <img src="images/portfolio-5.png" class="port" alt="a picture of a photo gallery">
         <h2>Photo Gallery</h2>
         <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigte through photos.</p>
       </div>
-      <div>
-        <img src="images/portfolio-6.png" alt="a picture of a calculator app">
+      <div class="row">
+        <img src="images/portfolio-6.png" class="port" alt="a picture of a calculator app">
         <h2>Calculator</h2>
         <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
       </div>
+    <!-- </div> -->
     </section>
+
   </main>
   <aside id="skills">
+    <img src="https://placeimg.com/1280/720/tech" class="port" alt="a tech photo">
     <h3>SKILLS</h3>
-  
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Graphic Design</li>
+    </ul>
   </aside>
   <section id="contact">
     <h3>CONTACT</h3>
@@ -71,15 +88,19 @@
     <p>Email: <strong>email@yoursite.com</strong></p>
   </section>  
   <footer>
-    <h3>Gordon Munro</h3>
-    <nav>
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-      </ul>
-    </nav>
+    <hr>
+    <ul class="foot-nav mob-foot">
+      <li class="foot-name">Gordon Munro</li>
+      <li><a href="#home">BACK TO TOP</a><li>
+    </ul>
+    <ul class="foot-nav desk-foot">
+      <li class="foot-name">Gordon Munro</li>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+    </ul>
   </footer>
+</div>
 </body>
 </html>
