@@ -23,6 +23,7 @@ a:hover {
 main p {
     padding: 1rem 1.5rem;
     line-height: 1.5;
+    margin-top: -1rem;
 }
 
 footer,
@@ -37,7 +38,7 @@ header {
 nav li {
     padding: 10px 20px;
     background-color: lightsteelblue;
-    margin: 5px 0;
+    margin: 4px 0;
 }
 ul {
     list-style-type: none;
@@ -50,7 +51,7 @@ header p {
 .port {
     width: 100%;
 }
-section h3 {
+main h3 {
     margin: 3rem;
 }
 .foot-nav {
@@ -115,4 +116,30 @@ aside {
         max-width: 48%;
         margin: auto;
     }
+    aside {
+        max-height: 30%;
+        max-width: 60%;
+        margin: 0 auto;
+    }
 }
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1150px;
+    }    
+    .row {
+        max-width: 30%;
+        margin: auto;
+    }
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header p {
+        padding: 1rem 4rem;
+    }
+    .cont {
+        padding: 0 19rem;
+    }
+}
+    
